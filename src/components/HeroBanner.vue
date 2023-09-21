@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
     <div class="hero">
         <div class="textContent">
@@ -65,10 +62,11 @@
             }
             .mainTitle {
                 position: block;
-                padding: 1rem 0 2rem;
+                padding: 1rem 0;
                 width: 100%;
 
                 @media only screen and (min-width: 1200px) {
+                    padding: 1rem 0 2rem;
                     width: 140%;
                     position: absolute;
                 }

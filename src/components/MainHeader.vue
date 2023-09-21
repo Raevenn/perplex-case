@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +13,7 @@
             <div class="title">
                 <b>HARUNO</b>
             </div>
+            <div class="break"></div>
             <div class="items">
                 <a href="/" class="item">Works</a>
                 <a href="/" class="item">About</a>
@@ -34,6 +32,11 @@
     align-items: center;
     width: 100%;
     padding-bottom: 2rem;
+    flex-wrap: wrap;
+    
+    @media only screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+    }
 
     .logo {
         aspect-ratio: 1;
@@ -46,11 +49,36 @@
     .items {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        width: 50%;
-
+        justify-content: end;
+        width: 100%;
+        flex-wrap: wrap;
+        
+        @media only screen and (min-width: 578px) {
+            flex-wrap: nowrap;
+        }
+        @media only screen and (min-width: 992px) {
+            width: 50%;
+        }
         .item {
             padding: 0.5rem 1rem;
+            margin: 0 1rem;
+
+            @media only screen and (max-width: 767px) {
+                // padding: 0.5rem 0.5rem;
+                // margin: 0 0.5rem;
+                font-size: 0.8rem;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .break {
+        flex-basis: 100%;
+        height: 0;
+
+        @media only screen and (min-width: 992px) {
+            display: none;
         }
     }
 }
