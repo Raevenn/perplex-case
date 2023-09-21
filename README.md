@@ -23,3 +23,13 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+## Time spent on project
+```
+11:30 - 16:00 = 4:30
+17:00 - 17:40 = 0:40
+20:00 - 22:00 = 2:00
+
+Total:          7:10
+```
