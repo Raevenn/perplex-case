@@ -64,11 +64,14 @@
         .mainTitle {
             display: flex;
             flex-direction: column;
-            padding: 4rem 0;
+            padding: 2rem 0;
+
+            @media only screen and (min-width: 768px) {
+                padding: 4rem 0;
+            }
             .allProjectsBtn {
                 margin-left: unset;
             }
-
             @media only screen and (min-width: 576px) {
                 flex-direction: row;
                 
@@ -94,14 +97,22 @@
             width: 100%;
 
             .item {
-                margin-bottom: 4rem;
+                margin-bottom: 2rem;
                 
+                @media only screen and (min-width: 768px) {
+                    margin-bottom: 4rem;
+                }
                 .image {
                     width: 100%;
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
+
+                    @media only screen and (min-width: 768px) {
+                        margin-bottom: 2rem;
+                    }
+
 
                     &.googleArtsCulture {
                         aspect-ratio: 5/8;
@@ -127,7 +138,11 @@
                     p {
                         margin: 1rem 0 0;
                         color: var(--tertiary-color);
-                        width: 80%;
+                        width: 100%;
+
+                        @media only screen and (min-width: 586px) {
+                            width: 80%;
+                        }
                     }
                 }
             }

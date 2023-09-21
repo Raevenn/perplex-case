@@ -26,7 +26,12 @@
 
 <style lang="scss" scoped>
     .specialisation {
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
+
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 6rem;
+        }
+        
     }
     .header {
         .topTitle {
@@ -40,9 +45,14 @@
             h5 {
                 display: inline-block;
             }
-            .mainTitle {
+        }
+        .mainTitle {
+            padding: 2rem 0;
+
+            @media only screen and (min-width: 768px) {
                 padding: 4rem 0;
             }
+
         }
     }
     .items {
@@ -51,18 +61,20 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        gap: 4rem;
+        gap: 2rem;
 
-        @media only screen and (min-width: 1150px) {
+        @media only screen and (min-width: 992px) {
             flex-direction: row;
-            gap: 4rem;
+        }
+        @media only screen and (min-width: 768px) {
+            gap: 3rem;
         }
         
         .item {
             width: 100%;
             max-width: 500px;
 
-            @media only screen and (min-width: 1150px) {
+            @media only screen and (min-width: 1200px) {
                 width: 33%;
             }
 
@@ -72,7 +84,12 @@
                 background-position: center;
                 background-size: cover;
                 width: 100%;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
+
+                @media only screen and (min-width: 768px) {
+                    margin-bottom: 2rem;
+                }
+                
             }
             &:nth-child(1) {
                 .image {
