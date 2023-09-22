@@ -16,7 +16,7 @@ body {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background-color: #fff2f3;
+    background: linear-gradient(to bottom right, var(--secondary-color) 0%, #fff 100%) 100% no-repeat;
     color: var(--primary-color);
     overflow-x: hidden;
     min-height: 100dvh;

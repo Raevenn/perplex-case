@@ -10,6 +10,9 @@
         </div>
         <div class="image">
             <img src="../assets/img/Person.jpg" alt="person">
+            <div class="miniCard">
+                <a href="/">About Myself <span style="margin-left: 1rem">&#129130;</span></a>
+            </div>
         </div>
     </div>
 </template>
@@ -65,6 +68,13 @@
                 padding: 1rem 0;
                 width: 100%;
 
+                // transparant image text effect
+                background-image: url("../assets/img/paint.jpg");
+                background-repeat: repeat;
+                background-size: contain;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
                 @media only screen and (min-width: 1200px) {
                     padding: 1rem 0 2rem;
                     width: 140%;
@@ -80,6 +90,7 @@
         }
     }
     .image {
+        position: relative;
         width: 100%;
         order: -1;
 
@@ -87,7 +98,24 @@
             width: 60%;
             order: 2;
         }
+        .miniCard {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 1rem 0.5rem;
+            background-color: white;
+            font-size: 1rem;
+            font-weight: 500;
 
+            @media only screen and (min-width: 576px) {
+                padding: 2rem 1rem;
+                font-size: 1.5rem;
+            }
+
+            a {
+                padding: 1rem;
+            }
+        }
         img {
             width: 100%;
             aspect-ratio: 1;

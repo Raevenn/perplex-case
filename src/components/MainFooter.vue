@@ -10,11 +10,13 @@
                 <a href="/" class="item">Media</a>
             </div>
             <div class="break"></div>
+            <!-- TODO: make social icons -->
             <div class="items socials">
-                <a href="/" class="item">Works</a>
-                <a href="/" class="item">About</a>
-                <a href="/" class="item">Media</a>
-                <a href="/" class="item">Contact</a>
+                <a href="/" class="item">Bê</a>
+                <a href="/" class="item">Web</a>
+                <a href="/" class="item">LinkedIn</a>
+                <a href="/" class="item">Twitter</a>
+                <a href="/" class="item">Instagram</a>
             </div>
         </div>
     </footer>
@@ -28,6 +30,7 @@
     align-items: center;
     width: 100%;
     padding-bottom: 2rem;
+    margin-top: 10rem;
     flex-wrap: wrap;
     
     @media only screen and (min-width: 1200px) {
@@ -50,6 +53,9 @@
         &.socials {
             justify-content: end;
             width: 100%;
+            .item {
+                margin: 0 0.5rem;
+            }
         }
         .item {
             padding: 0.5rem 1rem;
