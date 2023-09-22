@@ -59,6 +59,13 @@
             }
 
             .nameTitle {
+                font-family: 'Dancing Script', cursive;
+                font-weight: 700;
+                font-size: 1.5rem;
+                
+                @media only screen and (min-width: 768px) {
+                    font-size: 3rem;
+                }
                 @media only screen and (min-width: 1200px) {
                     padding-bottom: 20rem;
                 }
