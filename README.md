@@ -1,5 +1,11 @@
 # Perplex-case
 
+## Intro
+
+This project is purely visual and has no working js, backend or data. The mobile scalability also needs some work in some places, as a perfectionist I'd love to perfect these things but I wanted to keep myself to the alotted time.
+
+One major problem was that the design came in .png instead of an Adobe XD file for example. This made distances, font sizes and such a lot of guess work. The tools I had to get the right colors and measure pixels also do not work on .png files. There were also no images provided, so I've had to find my own that vaguely suited their spot.
+
 ## Project Setup
 
 This project is dependant on Node.js version 16+
